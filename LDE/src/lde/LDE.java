@@ -5,6 +5,8 @@
  */
 package lde;
 
+import static java.lang.Thread.sleep;
+
 /**
  *
  * @author josed
@@ -14,7 +16,7 @@ public class LDE {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // TODO code application logic here
         ListaD n= new ListaD();
         n.InsertarUltimo(15);
@@ -25,9 +27,11 @@ public class LDE {
         n.InsertarUltimo(31);
         n.InsertarUltimo(32);
         n.imprimir();
+        n.GenerarGraphyz();
         n.Eliminar(8);
         n.imprimir();
-        
+         sleep(1000);
+        n.GenerarGraphyz();
     }
     
 }
