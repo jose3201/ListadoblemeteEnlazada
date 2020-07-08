@@ -69,8 +69,8 @@ public class ListaD {
                     primero.setAnterior(null);
                     tama--;
                 } else if (aux.getSiguiente()==null) {
-                    Nodo auxa=aux.getAnterior();
-                    auxa.setSiguiente(null);
+                    ultimo=aux.getAnterior();
+                    ultimo.setSiguiente(null);
                     aux.setAnterior(null);
                     tama--;
                 }else{
